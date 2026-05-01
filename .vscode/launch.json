@@ -43,12 +43,12 @@
 	"svdFile": "obj/debug.svd",
 	"cwd": "${workspaceRoot}",
 	      "device" : "-AT32F421K8U7",
-        "osx": {
-            "gdbPath": "${workspaceRoot}/tools/macos/xpack-arm-none-eabi-gcc-10.3.1-2.3/bin/arm-none-eabi-gdb"
-        },
-        "linux": {
-            "gdbPath": "${workspaceRoot}/tools/linux/xpack-arm-none-eabi-gcc-10.3.1-2.3/bin/arm-none-eabi-gdb"
-        },
+        // "osx": {
+        //     "gdbPath": "${workspaceRoot}/tools/macos/xpack-arm-none-eabi-gcc-10.3.1-2.3/bin/arm-none-eabi-gdb"
+        // },
+        // "linux": {
+        //     "gdbPath": "${workspaceRoot}/tools/linux/xpack-arm-none-eabi-gcc-10.3.1-2.3/bin/arm-none-eabi-gdb"
+        // },
         "windows": {
             "gdbPath": "${workspaceRoot}\\tools\\windows\\xpack-arm-none-eabi-gcc-10.3.1-2.3\\bin\\arm-none-eabi-gdb"
         },
@@ -66,3 +66,4 @@
       }
     ]
   }
+  

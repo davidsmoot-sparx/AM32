@@ -116,15 +116,25 @@ void ADC_Init(void)
     LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_ADC);
 
     LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
+#ifdef HARDWARE_GROUP_G0_ECHOMAV
+    LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOB);
+#endif
+
     /**ADC1 GPIO Configuration
     PA4   ------> ADC1_IN4
+    ECHOMAV: PB3 = ADC1_IN10
     PA6   ------> ADC1_IN6
     */
     GPIO_InitStruct.Pin = VOLTAGE_ADC_PIN;
     GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+    /* USER CODE BEGIN ADC1_Init 1 */
+#ifdef HARDWARE_GROUP_G0_ECHOMAV
+    LL_GPIO_Init(VOLTAGE_ADC_PORT, &GPIO_InitStruct);
+#else
     LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
+#endif
+    /* USER CODE END ADC1_Init 1 */
     GPIO_InitStruct.Pin = CURRENT_ADC_PIN;
     GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
