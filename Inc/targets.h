@@ -40,7 +40,7 @@
 #define GPIO_PORT_PIN(portnum, pinnum) ((portnum)<<8|(pinnum))
 
 // GLOBAL
-#define USE_ADC_INPUT
+// #define USE_ADC_INPUT
 // #define USE_ALKAS_DEBUG_LED
 
 
