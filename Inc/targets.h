@@ -3763,8 +3763,8 @@ set start memory addr for writing, and per datasheet the same addr for both 64kB
 #define CURRENT_ADC_PIN LL_GPIO_PIN_6
 #define CURRENT_ADC_CHANNEL LL_ADC_CHANNEL_6
 
-//! @todo: add init code for PA14=SWCLK/PA13=SWDIO (both AF1) --> maybe default on reset
-//! @todo: add something for telemetry on PB6?
+
+#define USE_SERIAL_TELEMETRY
 
 #endif
 
