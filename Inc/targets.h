@@ -3752,9 +3752,9 @@ set start memory addr for writing, and per datasheet the same addr for both 64kB
 // notes :"On this STM32 series, comparator input minus parameters are the
 // same on all COMP instances. However, comparator instance kept as macro
 // parameter for compatibility with other STM32 families".
-#define PHASE_A_COMP LL_COMP_INPUT_MINUS_IO3
+#define PHASE_A_COMP LL_COMP_INPUT_MINUS_IO2
 #define PHASE_B_COMP LL_COMP_INPUT_MINUS_IO1
-#define PHASE_C_COMP LL_COMP_INPUT_MINUS_IO2
+#define PHASE_C_COMP LL_COMP_INPUT_MINUS_IO3
 
 #define VOLTAGE_ADC_PIN LL_GPIO_PIN_2
 #define VOLTAGE_ADC_PORT GPIOB
@@ -3762,9 +3762,6 @@ set start memory addr for writing, and per datasheet the same addr for both 64kB
 
 #define CURRENT_ADC_PIN LL_GPIO_PIN_6
 #define CURRENT_ADC_CHANNEL LL_ADC_CHANNEL_6
-
-
-#define USE_SERIAL_TELEMETRY
 
 #endif
 
