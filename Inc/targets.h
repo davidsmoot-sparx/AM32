@@ -2265,6 +2265,8 @@
 set start memory addr for writing, and per datasheet the same addr for both 64kB & 128kB G071 boards */
 #define SIXTY_FOUR_KB_MEMORY
 
+#define NO_PA11_PA12_REMAP
+
 #endif
 
 
