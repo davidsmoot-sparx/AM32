@@ -2254,7 +2254,7 @@
 #define FILE_NAME "ECHOMAV_ESC_G071"
 #define FIRMWARE_NAME "ECHOMAV_G071"
 //!< unit: 20.8ns
-#define DEAD_TIME 50      
+#define DEAD_TIME 28      
 //!< current shunt monitor w/ 100V/V gain + 0.5mohm resistance
 #define MILLIVOLT_PER_AMP 50 
 //unit: millivolts. Starting with 0 & will adjust if needed.
